@@ -3,17 +3,18 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
-int main(void) {
-    float weight;  
+int main()
+{
+	double mom;
 
-    
-    printf("50: ");
-    scanf("%f", &weight);
+	printf("몸무게:");
+	scanf("%2lf", &mom);
 
-    
-    printf("50.00: %.2f kg\n", weight);
+	printf("일력한 몸무게는 %.2fKG 입니다.\n", mom);
 
-    return 0;
+	return 0;
 }
