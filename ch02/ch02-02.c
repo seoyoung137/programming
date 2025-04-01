@@ -3,22 +3,22 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
-#define _CRT_SECURE_NO_WARNINS
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 
-int main(void) {
-    int student_id;     
-    float grade;         
+int main()
+{
+	int studentNumber;
+	float grade;
 
-    printf("12: ");
-    scanf_s("%d", &student_id);
+	printf("학생의 번호를 입력하세요: ");
+	scanf("%d", &studentNumber);
 
-    printf("4.3: ");
-    scanf_s("%f", &grade);
+	printf("학생의 학점을 입력하세요: ");
+	scanf("%f", &grade);
 
-    printf("12: %d\n", student_id);
-    printf("4.3: %.2f\n", grade);  
+	printf("%d번 생의 학점은 %.6f입니다.\n", studentNumber, grade);
 
-    return 0;
+	return 0;
 }
