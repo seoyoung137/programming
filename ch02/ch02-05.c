@@ -3,17 +3,19 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
-int main(void) {
-    int hex_number;  // 16진수 저장 변수
+int main()
+{
+	int hexNumber;
+	//사용자 입력 받기
+	printf("16진수 정수를 입력하세요 (예: 0x1A): ");
+	scanf("%x", &hexNumber); // scanf_s() 대신 scanf ()사용;
 
-    // 사용자로부터 16진수 입력 받기
-    printf("16진수 정수를 입력하세요 (예: 0x1A3): ");
-    scanf("%x", &hex_number);  // %x를 사용하여 16진수 입력 받기
+	//10진수로 출력
+	printf("입력한 16진수의 10진수 값 : %d\n", hexNumber);
 
-    // 10진수로 출력
-    printf("10진수로 변환: %d\n", hex_number);
-
-    return 0;
+	return 0;
 }
