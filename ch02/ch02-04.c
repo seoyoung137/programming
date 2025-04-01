@@ -3,22 +3,24 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
-int main(void) {
-    char size;  // 커피 사이즈 (문자)
-    int quantity;  // 주문 수량 (정수)
+int main()
+{
+	char size;
+	int quantity;
 
-    // 사용자 입력 받기
-    printf("커피 사이즈를 입력하세요 (S, T, G): ");
-    scanf(" %c", &size);  // 앞에 공백 추가하여 이전 입력 버퍼 제거
+	// 사용자 입력 받기
+	printf("커피 사이즈를 입력하세요 (S, T, G): ");
+	scanf_s(" %c", &size, 1);  // 크기 지정 필요
 
-    printf("주문 수량을 입력하세요: ");
-    scanf("%d", &quantity);
+	printf("주문수량을 입력하세요: ");
+	scanf_s("%d", &quantity);
 
-    // 입력된 값 출력
-    printf("커피 사이즈: %c\n", size);
-    printf("주문 수량: %d개\n", quantity);
+	// 일력값 출력
+	printf("주문하신 커피 사이즈: %c, 수량: %d\n", size, quantity);
 
-    return 0;
+		return 0;
 }
