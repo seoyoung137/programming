@@ -3,8 +3,6 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
-
-
 #include <stdio.h>
 
 int main(void) {

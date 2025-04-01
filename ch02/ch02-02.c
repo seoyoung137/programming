@@ -3,8 +3,7 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
-
-
+#define _CRT_SECURE_NO_WARNINS
 
 #include <stdio.h>
 
@@ -13,10 +12,10 @@ int main(void) {
     float grade;         
 
     printf("12: ");
-    scanf("%d", &student_id);
+    scanf_s("%d", &student_id);
 
     printf("4.3: ");
-    scanf("%f", &grade);
+    scanf_s("%f", &grade);
 
     printf("12: %d\n", student_id);
     printf("4.3: %.2f\n", grade);  

@@ -4,10 +4,8 @@
 //³¯Â¥ : 2025.04.01
 
 #include <stdio.h>
-
-int main(void) {
-  
-    printf("Hello, World!\n");
-
-    return 0;
+int main(void)
+{
+	printf("int main (void)\n{\n    return 0;\n}\n");
+	return 0;
 }
