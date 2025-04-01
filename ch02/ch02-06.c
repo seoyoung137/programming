@@ -3,19 +3,44 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main(void) {
-    int number;  // 입력된 정수를 저장할 변수
+int main()
+{
+	int num;
+	char type;
 
-    // 사용자 입력 받기
-    printf("정수를 입력하세요 (8진수: 012, 10진수: 12, 16진수: 0x12): ");
-    scanf("%i", &number);  // %i는 입력된 형식(8진수, 10진수, 16진수)을 자동 판별
+	// 사용자 입력 받기
+	printf("입력할 정수의 진법을 선택하세요 (8, 10, 16):");
+	scanf(" %c", &type); // 공백을 넣어 이전 입력 버퍼를 비운다.
 
-    // 변환된 값 출력
-    printf("8진수: %o\n", number);
-    printf("10진수: %d\n", number);
-    printf("16진수: %X\n", number);
+	// 진법에 따라 입력 받기
+	if (type == '8')
+	{
+		printf("8진수로 입력한 숫자를 입력하세요: ");
+		scanf("%o", &num); // 8진수 입력
+	}
+	else if (type == '10')
+	{
+		printf("10진수로 입력한 숫자를 입력하세요: ");
+		scanf("%d", &num); // 10진수 입력
+	}
+	else if (type == '16')
+	{
+		printf("16진수로 입력한 숫자를 입력하세요: ");
+		scanf("%x", &num); // 16진수 입력
+	}
+	else
+	{
+		printf("잘못된 입력입니다.\n");
+		return 1;
+	}
 
-    return 0;
+	//각 진법으로 출력
+	printf("입력한 값의 8진수: %o\n", num);
+	printf("입력한 값의 10진수: %o\n", num);
+	printf("입력한 값의 16진수: %X\n", num);
+
+	return 0;
 }
