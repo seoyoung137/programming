@@ -3,20 +3,27 @@
 //작성자 : 윤서영
 //날짜 : 2025.04.01
 
+#define _CRI_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
-int main(void) {
-    double pi = 3.14159265;  // 원주율 값 저장
+int main() {
+	double pi = 3.14159265;
 
-    // 다양한 소수점 자리 출력
-    printf("소수점 이하 2자리: %.2f\n", pi);
-    printf("소수점 이하 4자리: %.4f\n", pi);
-    printf("소수점 이하 6자리: %.6f\n", pi);
-    printf("소수점 이하 8자리: %.8f\n", pi);
+	// 소수점 이하 2자리까지 출력
+	printf("소수점 이하 2자리 출력: %.2f\n", pi);
 
-    // 지수 표기법 출력
-    printf("지수 표기법: %e\n", pi);
-    printf("지수 표기법 (대문자): %E\n", pi);
+	// 소수점 이하 4자리까지 출력
+	printf("소수점 이하 4자리 출력: %.4f\n", pi);
 
-    return 0;
+	// 소수점 이하 6자리까지 출력
+	printf("소수점 이하 6자리 출력: %.6f\n", pi);
+
+	// 소수점 이하 8자리까지 출력
+	printf("소수점 이하 8자리 출력: %.8f\n", pi);
+
+	// 지수형식으로 출력
+	printf("지수형식으로 출력: %e\n", pi);
+
+	return 0;
 }
