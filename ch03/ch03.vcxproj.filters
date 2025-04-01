@@ -15,22 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch02-01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch02-02.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch02-03.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch02-04.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch02-05.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch02-06.c">
+    <ClCompile Include="hello윤서영.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
