@@ -6,17 +6,17 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void solve() {
-	printf("8진수로 입력하려면 012, 16진수로 입력하려면 0x12처럼 입력하세요.\n");
-	printf("정수? ");
-	int num;
-	scanf("%x", &num);
-	printf("8진수 : 0%o\n", num);
-	printf("10진수 : %d\n", num);
-	printf("16진수 : %#x\n", num);
+void sSfsfase(void) {
+	int side;
+
+	printf("한 변의 길이? ");
+	scanf("%d", &side);
+
+	printf("정사각형의 넓이: %d\n", side * side);
+	printf("정사각형의 둘레: %d\n", 4 * side);
 }
 
 int main() {
-	solve();
+	sSfsfase();
 	return 0;
 }
