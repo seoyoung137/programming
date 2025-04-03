@@ -1,3 +1,8 @@
+//파일명 : ch03 - 07.c
+//내용: PA10. 원/달러 환율과 달러를 입력받아 몇 원인지 출력하는 프로그램 작성.
+//작성자 : 윤서영
+//날짜 : 2025.04.03
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
